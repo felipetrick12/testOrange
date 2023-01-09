@@ -2,4 +2,4 @@
 
 1. Eslint, Prettier (configs)
 2. MUI
-3. GetStaticProps and GetStaticPaths
+3. Server Side Props
