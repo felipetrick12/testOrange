@@ -21,12 +21,7 @@
     },
     "ecmaVersion": 13
   },
-  "plugins": [
-    "react",
-    "@typescript-eslint",
-    "prettier",
-    "@babel/plugin-syntax-flow"
-  ],
+  "plugins": ["react", "@typescript-eslint", "prettier"],
   "rules": {
     "array-callback-return": "error"
   }
