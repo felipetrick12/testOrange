@@ -1,16 +1,12 @@
 export interface DataResponse {
-  data: Info[];
+  data: Datum[];
 }
 
-export interface Info {
+export interface Datum {
   namePage: string;
   media: Media[];
 }
 
 export interface Media {
   url: string;
-}
-
-export interface ResponseError {
-  message: string;
 }
