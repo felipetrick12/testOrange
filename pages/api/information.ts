@@ -2,6 +2,7 @@ import type { NextApiRequest, NextApiResponse } from 'next';
 import { DataResponse, ResponseError } from '../../interfaces';
 import data from '../../data.json';
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default function (
   req: NextApiRequest,
   res: NextApiResponse<DataResponse | ResponseError>,

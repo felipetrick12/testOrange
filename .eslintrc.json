@@ -9,7 +9,9 @@
   "extends": [
     "prettier",
     "eslint:recommended",
+    "next",
     "plugin:react/recommended",
+    "plugin:@next/next/recommended",
     "plugin:@typescript-eslint/recommended"
   ],
   "parser": "@typescript-eslint/parser",
