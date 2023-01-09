@@ -1,0 +1,29 @@
+{
+    "data": [{
+            "namePage": "Gallery",
+            "media": [{
+                    "url": "https://www.youtube.com/watch?v=HIqQ0PfuPo8"
+                },
+                {
+                    "url": "https://www.youtube.com/watch?v=8UfguXHUjv8"
+                }
+            ]
+        },
+        {
+            "namePage": "Detail Page",
+            "media": [{
+                    "url": "1.png"
+                },
+                {
+                    "url": "2.png"
+                },
+                {
+                    "url": "3.png"
+                },
+                {
+                    "url": "4.png"
+                }
+            ]
+        }
+    ]
+}
