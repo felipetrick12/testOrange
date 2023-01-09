@@ -10,3 +10,7 @@ export interface Datum {
 export interface Media {
   url: string;
 }
+
+export interface ResponseError {
+  message: string;
+}
