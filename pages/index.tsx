@@ -4,6 +4,7 @@ import { Navbar, SideBar } from '../components/UI';
 import { DataResponse } from '../interfaces';
 import { GetStaticProps } from 'next';
 import { clienteAxios } from '../config';
+import { TabsComponent } from '../components/UI/TabsComponent';
 
 interface Props {
   data: DataResponse;
@@ -16,6 +17,7 @@ const Home = ({ data }: Props) => {
     <Layout title="Test orange">
       <>
         <Navbar title={data.data[0].namePage} setOpenMenu={setOpenMenu} />
+        <TabsComponent />
         <SideBar openMenu={openMenu} setOpenMenu={setOpenMenu} data={data} />
       </>
     </Layout>
