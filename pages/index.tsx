@@ -1,9 +1,23 @@
-import React from 'react';
+import { NextPage } from 'next';
+import React, { useState } from 'react';
+import { Layout } from '../components/layouts';
+import { Navbar } from '../components/UI';
+import { DataResponse } from '../interfaces';
 
-export default function Home() {
-  return (
-    <>
-      <h1>Hola</h1>
-    </>
-  );
+interface Props {
+  data: DataResponse;
 }
+
+const Home: NextPage<Props> = ({ data }) => {
+  const [openMenu, setOpenMenu] = useState<boolean>(true);
+
+  return (
+    <Layout title="Test orange">
+      <>
+        <Navbar title="haha" setOpenMenu={setOpenMenu} />
+      </>
+    </Layout>
+  );
+};
+
+export default Home;
