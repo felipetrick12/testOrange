@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Layout } from '../components/layouts';
 import { Navbar, SideBar } from '../components/UI';
 import { DataResponse } from '../interfaces';
-import { GetServerSideProps } from 'next';
+import { GetStaticProps } from 'next';
 import { clienteAxios } from '../config';
 import { TabsComponent } from '../components/UI/TabsComponent';
 
@@ -24,12 +24,12 @@ const Home = ({ data }: Props) => {
   );
 };
 
-export const getServerSideProps: GetServerSideProps = async () => {
+export const getStaticProps: GetStaticProps = async (ctx) => {
   const { data } = await clienteAxios.get<DataResponse>('/information');
 
   return {
     props: {
-      data: data,
+      data,
     },
   };
 };
