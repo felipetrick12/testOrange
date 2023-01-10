@@ -16,10 +16,7 @@ const Home = ({ data }: Props) => {
   return (
     <Layout title="Test orange">
       <>
-        <Navbar
-          title={data ? data.data[0].namePage : ''}
-          setOpenMenu={setOpenMenu}
-        />
+        <Navbar title={'asd'} setOpenMenu={setOpenMenu} />
         <TabsComponent />
         <SideBar openMenu={openMenu} setOpenMenu={setOpenMenu} data={data} />
       </>
