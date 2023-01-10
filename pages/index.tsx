@@ -24,14 +24,21 @@ const Home = ({ data }: Props) => {
   );
 };
 
-export const getStaticProps: GetStaticProps = async (ctx) => {
-  const { data } = await clienteAxios.get<DataResponse>('/information');
-
-  return {
-    props: {
-      data,
-    },
-  };
+export const getStaticProps: GetStaticProps = async () => {
+  try {
+    const { data } = await clienteAxios.get<DataResponse>('/information');
+    return {
+      props: {
+        data,
+      },
+    };
+  } catch (error) {
+    return {
+      props: {
+        error: 'there was an error',
+      },
+    };
+  }
 };
 
 export default Home;
